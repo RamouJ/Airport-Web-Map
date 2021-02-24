@@ -12,6 +12,6 @@ The United States geographic data used to create the choropleth map, was acquire
 
 Firstly, the base map was added to the map object using the `L.titleLayer` function from the **Leaflet** library within **javaScript**. Then, the **chroma.js** library was used along with the **ColorBrewer** to cholorize the markers that signified the control towers throughout the country. Next, a style class was assigned depending on whether or not the airport has a control tower. Furthermore, the **pointToLayer** function was used to create layers for the GeoJSON points, along with the **style**, **onEachFeature**, **filter**, and **coordsToLatLng** funtions, which were all used to display the respective markers along with popups. 
 
-Secondly, I used the setColor funtion, to colorize the map based on the number of airports within each county.
+Secondly, a **setColor** funtion was used to colorize the map based on the number of airports within each state, along with another **style** function that defined properties such as opacity, weight, and color. Next, a leaflet control object was used to create a legend, a scale bar, zoom controls, and include an attribution. 
 
 
